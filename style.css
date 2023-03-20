@@ -1,0 +1,102 @@
+body
+{
+	background-color: black;
+	color: yellow;
+	text-shadow: 1px 1px 5px #000000;
+	box-shadow: 1px 1px 5px #000000;
+	font-size: 22px;
+}
+
+*
+{
+	text-decoration: none;
+	color:yellow;
+}
+
+button
+{
+	background-color: yellow;
+	color: black;
+	font-size: 18px;
+	padding: 10px;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	margin: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover
+{
+	transform: scale(1.025);
+	filter: brightness(1.1);
+	cursor: pointer;
+}
+
+button:active
+{
+	transform: scale(0.9);
+	filter: brightness(0.9);
+}
+
+.flex-container 
+{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div 
+{
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#title
+{
+	font-size: 50px;
+	margin-left: 10%;
+}
+
+#clock
+{
+	font-size: 18px;
+}
+
+table, th, td 
+{
+  border:1px solid yellow;
+}
+
+th
+{
+	height: 10%;
+}
+
+input
+{
+	background-color: yellow;
+	color: black;
+}
+
+footer
+{
+	position:absolute; 
+	z-index:1;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 40%;
+	font-size: 16px;
+	filter: opacity(0%);
+}
+
+footer:hover
+{
+	filter: opacity(20%);
+}
+
+li:hover, a:hover
+{
+	text-decoration: underline;
+}

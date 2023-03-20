@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
+	<meta name="description" content="Mathematical riddles" />
+	<meta name="keywords" content="Mathematical, riddles" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="timers.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header class = "flex-container">			
+		<h1 id="title">Mathematical riddles</h1>
+		<div id="clock">Clock</div>
+	</header>
+	
+	<div class = "interface">
+		
+		<div>
+			Choose time speed:  
+			<input type = "number" id="inp2" value = "0" min="0" max="3">
+		</div>
+
+		<div>
+			Type in capacities of hourglasses in minutes: 
+			<input type = "text" id="inp3">
+		</div>
+		
+		<button id = "flipBtn">
+		Flip all hourglasses
+		</button>
+	</div>
+	
+	<table id="timersRiddle">
+		<caption>
+		<h2>Hourglasses</h2>
+		</caption>
+		<tbody>
+			<tr>
+				<td name="notActivated">
+					<progress class="volume" value="32" max="100"></progress>
+					<progress class="volume" value="32" max="100"></progress>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class = "description"></div>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	
+	<footer id="stopka">Website created by Eryk Izdebski</footer>
+	<script type="text/javascript" src = "timers_script.js"></script>
+</body>
+</html>

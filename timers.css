@@ -1,0 +1,61 @@
+#timersRiddle
+{
+	height: 600px;
+	width: 90%;
+	margin-left: 20px;
+	margin-top: 80px;
+}
+
+.volume
+{
+	margin-left: 50%;
+	margin-top: 250px;
+	--delay: 0.3s;
+	width: 50%;
+	height: 30%;
+	transform-origin: 0% 50%;
+	transition: all var(--delay) ease-in-out; 	
+}
+
+.volume:nth-child(2n)
+{
+	transform: translate(0px, -40%) rotate(270deg);
+}
+
+.volume:nth-child(2n+1)
+{
+	transform: translate(0px, 80%) rotate(270deg);
+}
+
+.volume:hover
+{
+	cursor: grab;
+}
+
+.volume:activate
+{
+	cursor: grabbing;
+}
+
+td
+{
+ 	border: none;
+}
+
+td:hover
+{
+	cursor: grab;
+	filter: brightness(1.2);
+}
+
+td[name=activated]
+{
+	transition: all 0.3s ease-in-out;
+	cursor: grabbing;
+	transform: rotate(180deg);
+}
+
+Button
+{
+	height: 80px;
+}
